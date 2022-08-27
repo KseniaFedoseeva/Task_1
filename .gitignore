@@ -1,0 +1,33 @@
+#артефакты сборки
+/build
+
+#Все jar-файлы, кроме module2.jar
+*.jar
+!module2.jar
+
+#файл настроек
+application-local.properties
+
+#папки
+.idea_copy
+!practice/.idea_copy/workspace.xml
+
+.idea
+
+#все папки build, но не файлы с именем build
+build/
+
+#файл module2.jar из п 2.1.b по-прежнему не должен игнорироваться
+!src/main/modules/module2/build
+src/main/modules/module2/build/*
+!src/main/modules/module2/build/module2.jar
+
+
+
+
+
+
+
+
+
+
